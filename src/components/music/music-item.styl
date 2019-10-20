@@ -1,0 +1,68 @@
+.music-summary-item
+  cursor pointer
+  width: 100%
+  height 100%
+  text-align center
+  overflow hidden
+  max-width 250px
+  &:hover
+    .music-img
+      .img-container
+        .fa
+          opacity 1
+  .music-img
+    height: 100%
+    position relative
+    overflow hidden
+    padding: 0
+    margin: 0
+    box-sizing border-box
+    box-shadow 0 0 5px #181818
+    display flex
+    justify-content flex-end
+    .desc
+      width 100%
+      position absolute
+      padding 0 12px
+      top: 0
+      left: 0
+      background transparent
+      transform rotate(90deg) translateX(-55px)
+      transform-origin bottom left
+      z-index 1
+      text-align left
+      overflow hidden
+    .img-container
+      position relative
+      height: 100%
+      display flex
+      justify-content flex-end
+      overflow hidden
+      img
+        height  100%
+        border-radius 1px
+        border-image none
+        top: 0
+        right: 0
+        &::before
+          content "\f01d"
+      .fa
+        width 100%
+        height 100%
+        color #ffffff
+        opacity 0
+        transition 0.4s ease
+        position absolute
+        top: 0
+        left: 0
+        background-color rgba(0, 0, 0, 0.5)
+        display flex
+        justify-content center
+        align-items center
+        font-size 10vw
+  .music-name
+    color #ffffff
+    font-weight 700
+    margin 12px 0 6px 0
+  .music-author
+    font-size $text-size-sm

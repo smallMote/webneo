@@ -1,0 +1,96 @@
+.photograph-summary
+  .summary-group
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+  .summary-item
+    overflow hidden
+    cursor: pointer
+    flex 1
+  .image-container
+    height: 100%
+    width: 100%
+    background-position center
+    background-size cover
+    background-repeat no-repeat
+    background-image url("https://s2.ax1x.com/2019/04/15/AvVGad.jpg")
+  .image-lg-item
+    .image-container
+      width: calc(100% - 12px)
+      height: 0
+      padding-bottom 100%
+  .image-md-item
+    display flex
+    flex-direction column
+    justify-content space-between
+    .top
+      height 0
+      width  calc(100% - 6px)
+      padding-bottom calc(50% - 6px)
+      margin-bottom: 6px
+    .bottom
+      margin-top: 6px
+      height 0
+      width  calc(100% - 6px)
+      display flex
+      justify-content space-between
+      padding-bottom calc(50% - 6px)
+      .image-container
+        width: calc(50% - 6px)
+        padding-bottom calc(50%)
+  .image-md-item.last-item
+    align-items flex-end
+    .top
+      margin-top: 6px
+      margin-bottom: 0
+    .bottom
+      margin-top: 0
+      margin-bottom: 6px
+@media screen and (max-width: 900px)
+  .photograph-summary
+    .summary-group
+      display flex
+      flex-wrap wrap
+      flex-direction column
+      justify-content center
+    .summary-item
+      max-height unset
+      height 300px
+      overflow hidden
+      cursor: pointer
+      flex unset
+    .image-container
+      height: 100%
+      width: auto
+      background-position center
+      background-size cover
+      background-repeat no-repeat
+      background-image url("https://s2.ax1x.com/2019/04/15/AvVGad.jpg")
+    .image-lg-item
+      .image-container
+        width: auto
+        height: calc(100% - 12px)
+        padding-bottom unset
+    .image-md-item
+      height 600px
+      display flex
+      flex-direction column
+      justify-content space-between
+      .top
+        height calc(50% - 6px)
+        width 100%
+        padding-bottom unset
+      .bottom
+        height calc(50% - 6px)
+        width  100%
+        display flex
+        justify-content space-between
+        padding: unset
+        .image-container
+          width: calc(50% - 6px)
+          height: auto
+          padding-bottom unset
+    .image-md-item.last-item
+      align-items unset
+      margin-top: 12px
+

@@ -1,0 +1,32 @@
+@import "../../common/stylus/variable.styl"
+.poe-summary-item
+  text-align center
+  position relative
+  overflow hidden
+  background-position center
+  background-size cover
+  background-repeat no-repeat
+  color #ffffff
+  z-index 1
+  .image-cover
+    content ''
+    width: 100%
+    height: 100%
+    position absolute
+    top: 0
+    left: 0
+    transform-origin center
+    filter blur(5px)
+    z-index -1
+    overflow hidden
+    img
+      width: 100%
+      transform scale(1.1)
+  .author
+    font-size $text-size-sm-x
+    color #ffffff
+    margin 6px 0
+    span:first-child
+      margin-right: 6px
+.poe-summary-item.neo-card
+  color #ffffff
